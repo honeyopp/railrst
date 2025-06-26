@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Webhook 生成器</title>
+  <style>
+    body { font-family: Arial; padding: 2em; }
+    input, button { padding: 8px; margin: 5px; width: 300px; }
+  </style>
+</head>
+<body>
+  <h2>Webhook 转发生成器</h2>
+  <form action="/create" method="post">
+    <label>请输入你的目标地址（Target URL）：</label><br>
+    <input type="text" name="target_url" placeholder="如 https://httpbin.org/post" required><br>
+    <button type="submit">生成 Webhook</button>
+  </form>
+</body>
+</html>
